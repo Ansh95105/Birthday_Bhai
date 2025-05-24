@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Janmadivas ni Shubhkamna!</title>
+    <link rel="stylesheet" href="Birth.css" />
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay unmuted loop id="bgVideo">
+        <source src="background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <div id="message0">❤️❤️ Jay Swaminarayan ❤️❤️</div>
+        <div id="message1">🎉 Janmadivas ni Shubhkamna Bhai! ❤️</div>
+
+        <!-- Spacer between text and photos -->
+        <div style="height: 1000000vh;"></div>
+
+        <div class="photos">
+            <!-- Clickable first photo -->
+            <a href="Gallery/gallery.html" target="_blank" rel="noopener noreferrer">
+                <img src="1.jpg" class="photo landscape" id="photo1" alt="Photo 1" />
+            </a>
+
+            <!-- Clickable second photo -->
+            <a href="Gallery/gallery2.html" target="_blank" rel="noopener noreferrer">
+                <img src="2.jpg" class="photo landscape" id="photo2" alt="Photo 2" />
+            </a>
+
+            <!-- Clickable third photo -->
+            <a href="Gallery/gallery3.html" target="_blank" rel="noopener noreferrer">
+                <img src="3.png" class="photo landscape" id="photo3" alt="Photo 3" />
+            </a>
+        </div>
+
+        <div id="message2">પ્રેમ, આનંદ આને હસી સાથે તમારુ જીવન ભર્યું રહે!</div>
+        
+        
+        <div class="balloons"></div>
+        <div class="balloons right"></div>
+
+        <div id="cake"></div>
+        <div id="cake-top"></div>
+        <div id="candle"></div>
+        <div id="flame"></div>
+    </div>
+
+    <!-- Modal Viewer -->
+    <div id="modal" class="modal">
+        <span id="closeBtn" class="close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Modal Image" />
+    </div>
+
+    <script src="Birth.js"></script>
+</body>
+</html>

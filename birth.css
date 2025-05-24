@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height:100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.landscape {
+    width: 200px;
+    height: 120px;
+}
+
+#cake, #cake-top, #candle, #flame {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    margin: 10px auto;
+}
+
+#message1, #message2, #message0{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+#message0 {
+    font: optional;
+    color: rgb(229, 241, 9);
+    font: size 2rem;
+}
+
+#message1 {
+    font-weight: bold;
+    color: rgb(229, 241, 9);
+    font-size: 2rem;
+}
+
+#message2 {
+    font-style: italic;
+    color: rgb(221, 236, 12);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
